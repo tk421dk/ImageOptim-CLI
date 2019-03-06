@@ -8,6 +8,7 @@ export const pngquant = async (pngFilePaths: string[], options: IOptions): Promi
       '--ext=.png',
       '--force',
       '--skip-if-larger',
+      '--posterize=4',
       `--speed=${options.speed}`,
       `--quality=${options.quality}`,
       options.numberOfColors,
